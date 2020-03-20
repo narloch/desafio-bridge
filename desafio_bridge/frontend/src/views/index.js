@@ -1,27 +1,27 @@
 import React from "react";
 import "./styles.css";
+import Form from "../components/form/form"
+import Header from "../components/header/header"
+import Container from "../components/container/container"
+import FadeIn from 'react-fade-in';
 
-class Form extends React.Component {
+class Home extends React.Component {
     constructor(props) {
       super(props);
-      this.state = { number: '' };
+      this.state = { showAnswer: false };
     }
-    myChangeHandler = (event) => {
-      this.setState({username: event.target.value});
-    }
+
     render() {
       return (
-        <div className="container">
-        <form>
-            <br/>
-            <input type="number" min = '0' id="inputbox" placeholder="Insira o número"/>
-            <br/>
-            <br/>
-            <button type="submit" className="button">Enviar</button>
-        </form>
+        <div>
+        <Header />
+        <div className="Form-container">
+          <Form />
+          <FadeIn><Container /></FadeIn>
+        </div>
         </div>
       );
     }
   }
 
-  export default Form;
+  export default Home;
