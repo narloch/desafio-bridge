@@ -1,15 +1,20 @@
 import "./styles.css"
 import React from "react";
 
-function Container(props) {
+class Container extends React.Component {
+    constructor(props){
+        super(props);
+    };
     
-    return (
-        <div className = 'container'>
-            Divisores do 15: 1, 3, 5, 15
-            <br/>
-            Não é primo!
-        </div>
-    );
+    render () {
+        return(
+            <div className = 'container'>
+                Divisores de {this.props.number}: {this.props.divisors}
+                <br/>
+                {this.props.prime}!
+            </div>
+        );
+    }
 }
 
 export default Container
