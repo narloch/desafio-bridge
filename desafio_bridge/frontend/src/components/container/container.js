@@ -1,7 +1,8 @@
 import "./styles.css"
 import React from "react";
 
-function Container(props) {    
+function Container(props) {
+    
     return (
         <div className = 'container'>
             Divisores do 15: 1, 3, 5, 15

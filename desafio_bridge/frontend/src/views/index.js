@@ -6,21 +6,38 @@ import Container from "../components/container/container"
 import FadeIn from 'react-fade-in';
 
 class Home extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = { showAnswer: false };
-    }
+    state = {
+      number: "",
+      isHidden: true
+    };
+
+    onChange = updatedValue => {
+      this.setState({
+        number: {
+          ...this.state.number,
+          ...updatedValue,
+        },
+        isHidden: true,
+      });
+    };
+
+    onSubmit = changeVisibility => {
+      this.setState({
+        isHidden: false,
+      });
+    };
 
     render() {
-      return (
-        <div>
-        <Header />
-        <div className="Form-container">
-          <Form />
-          <FadeIn><Container /></FadeIn>
-        </div>
-        </div>
-      );
+        return (
+          <div>
+            <Header />
+            <div className="Form-container">
+              <Form onChange={number => this.onChange(number)} onSubmit={this.onSubmit}/>
+              <br />
+              {!this.state.isHidden && <FadeIn><Container /></FadeIn>}
+            </div>
+          </div>
+        );
     }
   }
 
