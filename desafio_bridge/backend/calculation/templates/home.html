@@ -1,0 +1,23 @@
+{% load static %}
+
+{% block content %}
+
+    <h2>
+        Desafio Laboratório Bridge
+    </h2>
+
+    <form method="post">
+        {% csrf_token %}
+        Digite o número:<br>
+        <input type="text" name="number"><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    {% if divisors != None%}
+        {{divisors}}
+</br>
+        {{prime}}
+    {% endif %}
+
+{% endblock %}

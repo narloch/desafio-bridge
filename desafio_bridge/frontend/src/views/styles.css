@@ -1,0 +1,9 @@
+.Form-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-content: center;
+    width: 400px;
+    padding: 50px;
+  }

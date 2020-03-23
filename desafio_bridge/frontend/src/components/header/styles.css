@@ -1,0 +1,15 @@
+.header {
+    background-color: #1C86EE;
+    line-height: 40px;
+  }
+
+h1 {
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+a {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+}
