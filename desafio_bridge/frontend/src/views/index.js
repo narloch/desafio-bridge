@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.css";
 import Form from "../components/form/form"
-import Header from "../components/header/header"
 import Container from "../components/container/container"
 import FadeIn from 'react-fade-in';
 import axios from "axios";

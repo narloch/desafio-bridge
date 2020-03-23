@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../components/header/header"
 import axios from "axios";
 import "./styles.css";
 
@@ -20,8 +19,6 @@ class Repository extends React.Component {
                 const data = promise.data;
                 this.setState({postData:JSON.parse(data)});
             }
-
-        console.log(this.state.postData[0].fields.prime)
     }
 
     renderTable = () => {
