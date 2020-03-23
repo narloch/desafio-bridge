@@ -21,7 +21,7 @@ O usuário também pode, se quiser evitar possíveis problemas quanto às depend
 
 ## Execução
 
-Após a instalaço de dependências, para rodar servidor web o usuário apenas precisa executar o comando dentro da pasta [/desafio_bridge/backend](./desafio_bridge/backend):
+Após a instalaço de dependências, para rodar servidor web o usuário apenas precisa executar o comando dentro da pasta [/desafio_bridge/backend](./desafio_bridge/backend), o servidor deve rodar na porta 8000 do localhost:
 
 ```
   python3 manage.py runserver
