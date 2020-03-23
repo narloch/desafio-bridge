@@ -32,4 +32,4 @@ Já para o frontend, abre-se outra aba do terminal e executa-se no diretório [/
   npm start
 ```
 
-Após o servidor estar em execução, a aplicação estará presente em localhost:3000. Enquanto o backend estará sendo executado na porta 8000.
+Após o servidor estar em execução, a aplicação estará presente na URL indicada pelo terminal onde o comando anterior foi executado.
