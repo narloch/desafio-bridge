@@ -9,8 +9,8 @@ def divisors_calc(number):
 
     return divisors
 
-def prime_calc(divisors):
-    if len(divisors) == 2:
+def prime_calc(number, divisors):
+    if number == 1 or len(divisors) == 2:
         return True
     else:
         return False

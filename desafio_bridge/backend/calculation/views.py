@@ -18,7 +18,7 @@ def index(request):
         number = int(data['number'])
 
         divisors = calculation.divisors_calc(number)
-        prime = calculation.prime_calc(divisors)
+        prime = calculation.prime_calc(number, divisors)
 
         if prime == True:
             prime_answer = "É primo"
