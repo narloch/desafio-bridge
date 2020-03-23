@@ -52,7 +52,6 @@ class Home extends React.Component {
     render() {
         return (
           <div>
-            <Header />
             <div className="Form-container">
               <Form onChange={number => this.onChange(number)} onSubmit={this.onSubmit}/>
               <br />
