@@ -11,7 +11,8 @@ from django.core.exceptions import ObjectDoesNotExist
  
 @csrf_exempt
 def index(request):
-    data = json.loads(request.body.decode('utf-8'))
+    if request.method == 'POST':
+        data = json.loads(request.body.decode('utf-8'))
 
     if request.method == 'POST' and data['number'] != None:
         number = int(data['number'])
