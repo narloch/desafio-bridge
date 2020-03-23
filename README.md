@@ -2,8 +2,9 @@
 Esse projeto implementa a resolução do desafio para a vaga de bolsista FullStack no laboratório Bridge. Consiste em uma aplicação web capaz de realizar encontrar e apresentar a lista de divisores de um número, bem como se esse é ou não primo. Para o desenvolvimento do backend, foi utilizado o framework Django e para o front, React.
 
 ## Tecnologias utilizadas
- Foi utilizado o framework Django para a criação do backend, criei um app calculation para realizar as tarefas pedidas. Utilizei um model para salvar em banco de dados os números enviados, além de seus divisores e um booleano para identificar se tal número é ou não primo. No views.py do app calculation, recebi e tratei os requests enviados pelo frontend. Para que não houvesse problema com o CORS, utilizei a biblioteca 'django-cors-headers', permitindo assim requests de outro domínio. 
- Já para o frontend, utilizei o framework React e criei componentes para a home, formulário e também para o repositório que apresenta os números que estão contidos no BD. A principal biblioteca utilizada foi a axios, que me permitiu criar requests para o backend. Além disso, para o roteamento utilizei a biblioteca 'react-router-dom'.
+Foi utilizado o framework Django para a criação do backend, criei um app calculation para realizar as tarefas pedidas. Utilizei um model para salvar em banco de dados os números enviados, além de seus divisores e um booleano para identificar se tal número é ou não primo. No views.py do app calculation, recebi e tratei os requests enviados pelo frontend. Para que não houvesse problema com o CORS, utilizei a biblioteca 'django-cors-headers', permitindo assim requests de outro domínio. 
+
+Já para o frontend, utilizei o framework React e criei componentes para a home, formulário e também para o repositório que apresenta os números que estão contidos no BD. A principal biblioteca utilizada foi a axios, que me permitiu criar requests para o backend. Além disso, para o roteamento utilizei a biblioteca 'react-router-dom'.
 
 ## Requisitos
 + Python 3.6.8
